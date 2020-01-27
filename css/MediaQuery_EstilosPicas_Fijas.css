@@ -1,0 +1,1092 @@
+@media screen and (max-width: 800px){
+
+h1{/*todas las páginas*/
+	font-size: 10vw;
+	height: 13vw;
+}
+h2{/*todos los titulos de página*/
+ 	font-size:22px;
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 4%;
+	width: 95%;
+	font-weight: normal;
+}
+iframe{/*respuestas.php*/
+	top: 10%;
+	height: 90%;
+}
+input{/*principal.php  demo.php*/
+	font-size: 17px;
+	height: 20px;
+	line-height: 20px;
+	width: 90%;
+	display: block;
+	margin-bottom: 7% !important;
+}
+input[type=checkbox]{/*principal.php*/
+	margin-left: -40%;
+	margin-right: -40%;
+}
+input[type=radio]{/*temas.php*/
+	margin-bottom: 7% !important;
+}
+input[type=submit]{
+	background:#040652;
+	border-radius: 15px;
+	border:0px;
+	padding:2px 2px;
+	cursor: pointer;
+	width:70px;
+	height: 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-size:13px;
+	line-height: 13px;
+	display: block;
+	margin-top: 10% !important;
+}
+.label{/*registro_Libre.php*/
+	font-size:  25px !important;
+}
+.label_1{/*bonos.php*/
+	text-align: center;
+	margin-top: -7%;
+	display: block;
+}
+.label_4{/*sabiosDia.php*/
+	left: 85%;
+	top: 10% !important;
+	z-index: 2;
+}
+legend{
+	font-size: 15px;
+}
+p{
+	font-size: 12px;
+}
+select{
+	font-size: 16px;
+	width: 260px;
+}
+small{
+	display: block;
+	margin-top: -8%;
+	font-family: verdana;
+	font-size: 10px;
+}
+span{
+	font-size: 17px;
+}
+table{/*ultima.php     participantes.php*/
+	width:95%;
+    margin-bottom: 12%; 
+}
+textarea{
+	width: 50%;
+	height: 100px;
+}
+td{/*participantes.php*/
+	text-align:left; 
+	background-color: #F4FCFB;
+	border-style: none; 
+	font-family:verdana; 
+	color:09204D; 
+	width: 100%;
+	line-height: 23px;
+	font-size: 11px;
+}
+th{/*participantes.php*/
+	font-size: 11px;
+	padding: 0% 2%;
+}
+.a_2{/*recibe_demo.php*/
+	font-size: 13px; 
+	left: 38%;
+}
+.a_3{/*entrada.php*/
+	margin-top: 10% !important;
+	margin-bottom: 5%;
+	font-size: 20px !important;
+}
+.a_5{/*instruccion.php*/
+	display: block;
+	text-align: center;
+	margin-top: -8%;
+	margin-bottom: 9%;
+	font-size: 17px;
+}
+.a_6{/*perfil.php*/ 
+	margin-top:10%  !important;  
+	font-size: 14px;
+	height:20px !important;
+	line-height: 15px !important;
+	width: 110px !important;
+	color:rgba(194, 245, 19,1);
+}
+.agradecimientos{/*registrarse.php*/
+	font-size: 14px;
+	width: 80%;
+	margin: auto;
+}
+.anuncio{/*registro.php*/
+	background-color: yellow;
+	height: 30px;
+}	
+.b_1{/*participacionHoy.php*/
+	display: inline-block;
+	margin-bottom: 1% !important;
+}
+.bloqueo{/*ultima.php*/
+	background-color: rgba(0,0,0,0.85) ;
+	font-size: 20px; 
+	top: 35%;
+	left: 0%;
+	width: 90%;
+	height: 15%;
+	line-height: 500%; 
+}	
+.bloqueo_2{/*respuesta.php  respuestaDemo.php   bloquearPregunta.php*/
+	background-color:rgba(0,0,0,0.85) ;
+	font-size: 18px; 
+	top: 49%;
+	left: 0%;
+	width: 100%;
+	padding: 3%;
+	box-sizing: border-box;
+	height: 18%;
+	line-height: 180%; 
+}
+.bloqueo_2_a{/*bloquearPreguntaDemo.php  respuestaDemo.php*/
+	font-size: 18px; 
+	top: 30.7%;
+	left: 0%;
+	width: 100%;
+	padding: 3%;
+	box-sizing: border-box;
+	height: 19%;
+	line-height: 180%;
+}	
+.bloqueo_2_b{/*bloquearPreguntaDemo.php */
+	background-color:rgba(0,0,0,0.95) ;
+	color:  rgba(194, 245, 19,1);
+	font-size: 18px; 
+	top: 50%;
+	left: 0%;
+	width: 100%;
+	padding-top: 0%;
+	padding: 3%;
+	box-sizing: border-box;
+	height: 19%;
+	line-height: 180%;
+}
+.bloqueo_2_c{/*bloquearPregunta.php*/
+	height: 21%;
+	background-color:rgba(0,0,0,0.95) ;
+	color:  rgba(194, 245, 19,1);
+	font-size: 18px; 
+	top: 46% !important;
+	left: 0%;
+	width: 100%;
+	padding-top: 0%;
+	padding: 3%;
+	box-sizing: border-box;
+	line-height: 180%;
+}
+.bloqueo_3{/*blquearPreguntaDemo.php  respuesta.php  */
+	background-color: rgba(0,0,0,0.85);
+	color:  rgba(194, 245, 19,1);
+	font-size: 18px;  
+	top: 50%;
+	left: 0%;
+	width: 100%;
+	padding: 3%;
+	box-sizing: border-box;
+	height: 22%;
+	line-height: 180%;
+}
+.bloqueo_3_a{/*prorroteoPuntos.php*/
+	color:  rgba(194, 245, 19,1);
+	font-size: 18px;  
+	top: 64%;
+	left: 0%;
+	width: 90%;
+	padding: 0% 5%;
+}
+.botonDemo{/*participantes.php*/
+	width: 55%;
+	margin: 15% auto; 
+	font-size: 14px; 
+}
+.br{/*club.php*/
+	margin-bottom:50%;
+}
+.button_principal{
+	font-size: 11px;
+	padding:1.5%;
+	width: 50%;
+	height: 10%;
+}
+.buttonTres{/*index.php*/
+	font-size:14px  !important;
+	width: 90px !important;
+	padding: 3px;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	line-height: 18px;
+	height: 42px;
+}
+.buttonCuatro{/*entrada.php   index.php*/
+	width: 45%;
+	font-size: 15px;
+}
+.buttonCinco{/*bonos.php*/
+	margin-top: 12%;
+	width: 80% !important;	
+}
+.celdas_th{
+	background-color: #F4FCFB; 
+	color:#040652; 
+	font-weight: bold;
+	font-size: 11px;
+}
+.CentroCeldas{
+	color:#09204D; 
+	width: 800px; 
+	text-align: center;
+}
+.cerrar{/*entrada.php*/ 
+	text-align: center; 
+	padding: 2% 1% 0% 0%; 
+	display: block;
+	font-size: 13px;
+}
+.contador{/*contacto.php  */
+	margin-left: 85%;
+}
+.contador_1{/*index.php  */
+	/* width: 35px !important; */
+	margin-left: 84% !important;
+	/* height: 16px;	 */
+	line-height: 16px;
+	font-size: 14px;
+	display: inline;
+}
+.contenedor_1{/*registro_Pago.php*/
+	display: block;  
+	margin-top: 3%;
+}
+.contenedor_2{/*registro_Pago.php*/ 
+	width: 95%; 
+	margin: 5% auto;
+}
+.contenedor_3{/*registro_Pago.php*/
+	display: flex; 
+	justify-content: space-between; 
+	width: 70%; 
+	margin: auto; 
+	clear: left;
+}
+.contenedor_4{/*index.php*/
+	background-color: red;
+}
+.contenedor_7{/*index.php                   */
+    grid-template-columns: 100%;
+}
+.h_1{/*participacionHoy.php*/
+	margin:5% auto 8% auto;
+	width: 90%;
+}
+.hr_2{/*header.php*/
+	color: rgba(120, 153, 149, 0.4);
+	width: 80%;
+	margin: auto;
+}
+.hr_3{/*header.php*/
+	display: block;
+}
+.hr_6{/*index.php*/
+	margin-top: 15%;
+	margin-bottom: 10%;
+}
+.icon{
+  font-size: 10px;
+}
+.input_1{/*entrada.php*/
+	top: 4%; 
+	left: 75%; 
+	width:20%; 
+	font-size: 17px;
+}
+.imagen_4{/*Sabios.php*/
+	width: 90%; 
+}
+.imagen_6{/*index.php*/
+	margin-top: 20%;
+	width: 90% !important; 
+	height: 200px !important;
+	filter: brightness(110%);
+}
+.imagen_7{/*participacionHoy.php     */
+	width: 170px; 
+	height: 170px;
+	margin-bottom: 0%;
+}
+.imagen_8{/*FotoPerfil.php*/
+	width: 100%; 
+	object-fit:contain ;/* deseado cover */
+	filter: brightness(110%);
+	height: 200px;
+}
+.imagen_9{/*participacionHoy.php*/
+	width: 70% !important; 
+	margin-left: 40%;
+}
+.imagen_11{/*imagenComentada.php*/
+	width: 95%; 
+	/* height: 340px; */
+	/* margin-top: 0%; */
+	margin-bottom: 5%;
+	display: block;
+	margin: auto;
+}
+.imagen_13{/*ultima   sabiosConInsignias.php   sabiosSalon.php*/
+	width: 70%;
+	border-radius: 60px;
+	/* margin: 5%; */
+}
+.imagen_15{/*ultima.php*/
+	width: 50px; 
+	height: 50px;
+	object-fit:cover ;/* deseado cover */
+	filter: brightness(110%);
+	margin: auto;
+	display: block;
+}
+.imagenTamaño{
+	width: 35%;
+}
+.Inicio_0{/*instruccion.php*/
+	font-size:15px;
+	margin-top: -9%;
+	margin-bottom: 10%;
+}
+.Inicio_1{/*index.php    contacto.php   principal.php*/
+	font-size:16px !important;
+	width: 90%; 
+	text-align: center;
+}
+/* .Inicio_1a{
+	width: 95% !important;
+} */
+.Inicio_2{/*demo.php    principal.php   */
+	width: 100%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20%;
+	border-radius: 15px;
+	padding: 2%;
+	padding-bottom: 0%;
+	box-sizing: border-box;
+}
+.Inicio_3{/*instruccion.php*/
+	width: 85%;
+	font-size:1.2em;
+	margin-bottom: 10%;
+	line-height: 155%;
+}
+.Inicio_4{/*entrada.php*/
+	font-size: 15px;
+	width: 90%;
+	margin:auto;
+	margin-bottom: 5%;
+}
+.Inicio_5{/*ultima.php*/
+	color:#040652 ; 
+	font-size: 14px;
+	width: 95%;
+	line-height: 140%;
+}
+.Inicio_6{/*instruccion.php     detalle_bono.php    valor_Xxxxxxxx.php*/
+	font-size:26px !important;
+	width: 80% !important;
+	margin: 5%;
+	margin-left: 0%;
+}
+.Inicio_7{/*recibePago.php*/
+	font-size: 18px;
+	width: 100%;
+	margin-bottom: 8%;
+}
+.Inicio_8{/*ultima.php*/
+	font-size: 14px;
+	width: 90%;
+	margin-top: 10% !important;
+}
+.Inicio_9{/*entrada.php*/
+	margin-top: -1% !important;
+	margin: auto;
+	margin-bottom: 7%;
+	width: 80%;
+	text-align: center; 
+	font-size: 18px;  
+	display: block;
+}
+.Inicio_11{/*participacionHoy.php*/ 
+	margin-top: 0%;
+	font-size:14px;
+}	
+.Inicio_12{/*index.php*/ 
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	display: block;
+	width: 40%;
+	font-size:14px;
+	margin-top: 10%;
+}			
+.Inicio_13{/*index.php*/
+	font-size: 17px;
+	margin-top:0%;
+	margin-bottom: 6%;
+}
+.Inicio_14{/*index.php     participacionHoy.php*/ 
+	font-size:34px !important;
+}	
+.Inicio_15{/*participacionHoy.php*/
+	margin-top: -25px !important;
+	margin-bottom: 50px !important;
+}
+p .Inicio_16{/*recibeCorreo.php*/
+	font-size:16px !important;
+	margin-top: 10%;
+	margin-bottom: 15%;
+}
+.Inicio_17{/*pregunta.php*/
+	font-size:22px !important;
+	margin-top: 5%;
+}
+.Inicio_18{/*bonos.php*/ 
+	font-family: 'Raleway', sans-serif;
+	display: block;
+	width: 60%;
+	font-size:13px;
+	line-height: 110%;
+}
+.Inicio_19{/*cultura.php*/ 
+	font-family: 'Raleway', sans-serif;
+	width: 70%;
+	font-size:20px;
+	margin-left:15%;
+	margin-top: 5%;
+	margin-bottom: 4%;
+}		
+.Inicio_20{/*instruccion.php*/
+	background-color: yellow;
+	font-size:14px !important;
+	width: 80%; 
+	font-weight: bold;
+	margin-top: -9% !important;
+	margin-bottom: 15% !important;
+	margin:auto;
+	text-align: center;
+}	
+.Inicio_21{/*participacionHoy.php*/ 
+	width: 100%;
+	font-size:17px !important;
+	margin: auto;
+	margin-top: -4%;
+	margin-bottom: 4%;
+	line-height: 150%;
+}		
+.Inicio_22{/*participacionHoy.php*/ 
+	margin-top: -10%;
+}	
+.Inicio_23{/*index.php*/
+	font-size:12px;
+}
+.Inicio_25{/*Valor_Xxxxxxxx.php*/
+	padding:2% 8%;
+	text-align: left;
+	color:#040652 ;
+	width: 90%;
+	font-size:1.3em;
+	font-family: 'Raleway', sans-serif;
+}
+.Inicio_27{/* index.php*/ 
+	width: 95%;
+	font-size:22px;
+	margin: auto;
+	margin-bottom: 4%;
+	color: white;
+}	
+.Inicio_28{/* index.php*/ 
+	width: 70%;
+}
+.Inicio_29{/*index.php*/
+	margin-top: 10%!important;
+	margin-bottom: 10% !important;
+	width: 95%;
+	font-size: 1.4em;
+}		
+.Inicio_30{/*participacionHoy.php*/
+	font-size: 1.3em !important;
+}
+.Inicio_31{/*ultima.php*/
+	font-family: 'Raleway', sans-serif;
+	width: 70%;
+	font-size:1.2em;
+	font-weight: bold;
+	margin: auto;
+	margin-top: 3%;
+	color: white;
+}
+.Inicio_32{/*ultima.php*/
+	font-family: 'Raleway', sans-serif;
+	width: 70%;
+	font-size:1em;
+	font-weight: bold;
+	margin: auto;
+	margin-top: 3%;
+	color: #040652 ;
+}
+.Inicio_32a{/*ultima.php*/
+	font-size:1.4em;
+}
+.Inicio_33{/*ultima.php*/
+	font-family: 'Raleway', sans-serif;
+	width: 95%;
+	font-size:1.4em;
+	font-weight: bold;
+	margin: auto;
+	margin-top: 3%;
+	color: #040652;
+}
+.Inicio_39{/*Estudios.php*/
+	width: 90%;
+	text-align: justify !important;
+}
+.etiqueta_34{/*datos_personales.php   registro.php */
+	margin-left: 6% !important;
+	text-align: left;
+}
+.Inicio_35{/*equipo.php*/ 
+	font-size:1.1em !important;
+	width: 90%;
+	margin: 5% auto;
+	line-height: 28px;
+}	
+.Inicio_36{/*equipo.php*/
+	width: 90%;
+	font-size: 1em;
+	text-align: justify;
+	margin-left: 5%;
+	margin-bottom: 10%;
+}
+.Inicio_37{/*equipo.php*/
+	margin-bottom: 7%;
+}
+.input_5{/*recibeCorreo.php   InsertarCodigo.php*/
+	width: 90%;
+	font-size: 23px;
+	height: 40px;
+	color: rgba(4, 6, 82,0.5) ;
+}
+.inputDestino{
+	background-color: blue;
+	width: 50%;
+	margin:auto; 
+	font-size: 12px;
+}
+.imagen{
+	width: 160px; 
+	height: 160px;
+	object-fit: contain; 
+	filter: brightness(110%);
+}
+.imagen_Div{
+	margin-left: 2%;
+	margin-top: 0%;
+}
+.imagen_3{/*footer*/
+	width: 10%; 
+	margin-left: -67%;
+	margin-top: 1%;
+	z-index: 0;
+}
+.li_1{/*equipo.php*/
+	width: 85%;
+	margin-left: 10%;
+	margin: 2% auto;
+	font-size: 1.1em;
+}
+.linea{
+	display: none;
+}
+.listaOculta{
+	display: none;
+}
+.listaMostrar{
+	display: block;
+}
+.Logo{ 
+	width: 45%;
+	height: 30%;
+	margin-top: 25%;
+	margin-right:10%;
+}
+.medio{
+	display: inline-block;
+	color: white;
+	font-size: 12px;
+}
+.medio_2{
+	width: 95%;
+	margin-left: -1.5px;
+	font-size: 11px;
+}
+.medio_3{
+	width: 95%;
+	font-size: 12px;
+}
+.menuResponsive{/*Todas las páginas*/
+	position: absolute;
+	width:48%;
+	margin-left: -48%;/*oculta el menu responsive*/
+	transition: all 0.5s;
+	z-index: 50;
+}
+.menuResponsive ul{/*Todas las páginas*/
+	flex-direction: column;
+	width: 100%;
+}
+.menuResponsive li{/*Todas las páginas*/
+	padding-left: 5%;
+	height: 40px;
+	padding-top: 5%;
+	flex-grow: 1;/*distribuye proporcionalmente los elementos internos en el eje horizontal, es necesario que el elemento padre tenga la propiedad display con el valor flex*/
+	/*width: 80%;*/
+}
+.menuResponsive li a{/*header*/
+	font-size: 15px;
+	width: 170px;
+	text-align: left;
+}
+.menuResponsive li a:hover{/*Todas las páginas*/
+	font-weight: bold;
+	font-size: 15px;
+}
+.modal_2{/*participantes.php*/
+	width: 90% !important;
+}
+.modalEtiquetaCerrar{
+	display: block;
+}
+.n00{/*index.php*/
+	width: 100%;
+	height: 50px;
+	/* padding-left: 0%; */
+	margin-left: 0%;
+	margin-top: 10%;
+	margin-bottom: 14%;
+	justify-content: space-around;
+	border:none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} 
+/* .n10{index.html
+	background: -webkit-linear-gradient(bottom, white 70%, #040652 30%);
+	padding-bottom: 15px;
+ 	width: 45%;
+ 	height: 40% !important;
+	margin: 0% 10%;
+	margin-bottom: 5%;
+	margin: 2% 1%;
+} */
+.n20{/*index.php*/
+	background: -webkit-linear-gradient(bottom, white 93%, #040652 7%);
+	border:2px solid #000;
+	border-radius:15px;
+	padding-top: 0.5%;
+	padding-bottom: 0%;
+	box-sizing: border-box;
+	margin: 3% auto;
+	margin-right: 5%;
+ 	width: 90%;
+ 	display: block;
+ 	line-height: 25px;
+}
+.nav_2{/*entrada.php */
+	font-size: 15px;
+	margin:auto;
+	width: 90%;
+}
+.nav_4{/*entrada.php*/
+	text-align: center;
+	padding-left: 0px;
+	font-size: 14px;
+}
+.nav_5{/*registrarse.php*/
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 1%;
+}
+.nav_5 a{/*registrarse.php*/
+	color:#040652; 
+	font-size:16px;
+	text-align: center;
+	margin-top: 8%;
+}
+.nav_7{/*entrada.php*/
+	font-size: 15px;
+	display: block;
+	padding-top: 3%;
+	margin-left: 0%;
+	margin-bottom: 6%;
+	width: 100%;
+	text-align: center;
+}
+.nav_8{/*temas.php*/
+	margin-bottom: 2%;
+}
+.nav_9{/*entrada.php*/
+	font-size: 15px;
+	margin-left: 30%;
+	width: 30%;
+}
+.nav_10_a{/*ultima.php  */
+	background-color:#F4FCFB;
+	cursor: pointer;
+	display: inline-block;
+	text-align: left;
+	margin-top: 3%;
+	margin-left: 0%;
+	margin-right: 1%;;
+	width: 100%;
+	border:none;
+	color:#040652; 
+}
+.nav_13{/*MostrarPregunta.php  */
+	margin-top: 10% !important;
+}
+.navegacion_1{/*pregunta.php*/
+	margin-left: 0%;
+	width: 100%;
+	bottom: 10pt;
+	justify-content: space-around;
+}
+.navegacion_2{/*ultima.php*/
+	margin-left: 0%;
+	margin-bottom: 5% !important;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-around;
+	font-family:verdana;
+}
+.noticia_1{ 
+	padding: 1% 2%; 
+	margin-right: 2%; 
+	margin-bottom: 0%; 
+	margin-left: 2%; 
+	text-align: justify-all;
+	font-size: 13px;
+}
+.nueva_Prueba{/*entrada.php*/
+	width: 90%;
+	margin-bottom: 8%;
+	margin-top: 0%;
+}
+.ocultarMenu{/*index.html*/
+	display: block;
+}
+.ocultarCelda{
+	display: none;
+}
+.ocultar_1{
+	display: none !important;
+}
+.p_1{/*da formato al texto que indica el puntaje el las preguntas preguntaXxxxx_00.php*/
+	color: yellow;
+	font-size: 11px;
+	font-family:verdana;
+	text-align: center;
+	width: 100%;
+}
+.p_3{/*recibe_demo.php*/
+	width: 100%;
+	padding: 3%;
+	top: 40%; 
+	left: 0%; 
+	font-size: 18px;
+	box-sizing: border-box;
+}
+.p4{/*registro_Libre.php*/
+	font-size: 20px !important; 
+	width: 80%; 
+	margin:20% auto
+}
+.p_5{/*entrada.php*/
+	font-size: 14px; 
+	width: 100%; 
+	margin:0%;
+	white-space: pre-wrap;
+	height: 40px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif
+}
+.p_6{
+	margin-top: 10% !important;
+}
+.p_8{/*footer*/
+	width: 45%;
+	font-size: 3.3vw;
+	top: 22%; 
+	left: 50%; 
+	line-height: 15px;
+}
+.p_9{/*imagenComentada.php*/
+	width: 95%;
+	margin: 1% auto 5% auto;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+.p_10{/*ultima.php*/
+	font-size: 1em;
+}
+.pais{
+	font-size: 17px;
+	font-weight: bold;
+	font-family: verdana;
+}
+.paciente{
+	color: black;
+	font-size: 12px;
+}
+.piePagina{/*todas las páginas*/
+	font-size: 10px;
+	line-height: 20px;;
+}
+.piePagina_2{/*todas las páginas*/ 
+	padding-bottom: -2% !important;
+	top: 100%;
+}
+.piePagina_3{/*todas las páginas*/
+	bottom: -140pt;
+}
+.piePagina_4{/*index.php*/
+	top:125% !important;
+}
+.participaciones{/*participaciones.php*/
+	width: 95%;
+	margin: 8% auto;
+}
+.popup{
+	font-size: 7vw; 
+}
+.Principal_2{
+	height: 50%;
+}
+.precios_1{
+	font-size: 11px;
+}
+.pregunta{/*preguntaXxxx_00.php*/
+	height: 100px;
+	width: 90%;
+	margin: 2% auto;
+	line-height: 140%;
+	font-size: 17px;
+	font-weight: bold;
+}
+.Premio{/*entrada*/
+	width: 100%; 
+}
+.prox{/*club.php*/
+	margin-top: 10%;
+	margin-bottom: 50%;
+}
+.Quinto{/*preguntaXxxxx_00.php*/
+	padding-top: 1%;
+	width: 90%;
+	height: 140px;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+.Quinto_2{/*contenedor de opciones para responder (preguntaXxxxx_00.php)*/
+	width: 100%;
+	height: 55px;
+	margin-top: 2%;
+	margin-bottom: 1%;
+	display: flex;
+	justify-content: space-between;
+}
+.Quinto_2 .efecto{/*preguntaXxxxx_00.php*/
+	display: inline;
+	font-size: 13px;
+}
+.radio{/*participacionHoy.php*/
+	font-size: 14px;
+}
+.recordar{/*principal.php*/
+	font-size: 12px; 
+	margin-top: 2%;
+	margin-left: 1%;
+	display: inline-block;
+	width: 180px !important;
+	text-align: left;
+	font-family:verdana;
+}
+.RegistroPago_1{/*registro_Pago.php*/
+	background-color: red !important;
+	width: 95%;
+	margin: auto;
+}
+.respuestaPreguntas{/*preguntaXxxxx_00.php*/
+	margin-top: 4%;
+	margin-bottom: 0%;
+	text-align: center;
+	height: 17%;
+}
+.Secundario{/*principal.php   preguntaXxxxx_00.php     contacto.php  registro.php    registrarse.php #040652*/
+	width: 100%;
+	min-height: 400px;
+}
+.sesion_3{/*participantes.php*/
+	width: 98%;
+}
+.small{/*entrada*/
+	background-color: yellow;
+	color: #040652; 
+	font-weight: bold; 
+	font-style: italic;
+	padding: 2%;
+	font-size:12px;
+	border-radius: 6px;
+}
+.span_0{/*entrada*/
+	font-size:22px;
+}
+.span_1{/*entrada*/
+	font-size:15px;
+}
+.span_2{/*entrada*/
+	font-size:12px;
+}
+.span_3{/*entrada*/
+	font-size:10px;
+}
+.span_4{/*PreguntaXxxxx_00.php*/
+	font-size: 13px;
+}
+.span_5{/*ultima.php*/
+	font-family:courier; 
+	font-size:20px !important; 
+	color:orange;
+	display: inline-block;
+	font-weight: bold;
+	margin: -8% 0% 8% 0%;
+	width: 100%;
+}
+.span_7{/*demo.php*/
+	font-size: 24px;
+	font-weight: bold;
+}
+.span_8{/*entrada.php*/
+	font-family:courier; 
+	font-size:20px !important; 
+	color:orange;
+	display: inline-block;
+	font-weight: bold;
+	margin: 0%;
+	width: 100%;
+}
+.span_8_a{/*entrada.php*/
+	font-family:courier; 
+	font-size:17px !important; 
+	font-weight: bold;
+	color:orange;
+	margin: -2% 0% 3% 0%;
+}
+.span_9{/*principal.php*/
+	line-height: 150%; 
+	font-size: 18px;
+	width: 95% !important;
+}
+.span_10{/*instruccion.php*/ 
+	width: 95%;
+	font-size:14px;
+	margin-top: -12% !important;
+	margin-bottom: 4%;
+	padding-left: 5%;
+}	
+.span_11{/*instruccion.php*/ 
+	margin-top: 0% !important;
+	padding-left: 17%;
+}
+.span_13{/*header.php*/
+	display: inline;
+}
+.tabla_0{/*ultima.php*/
+    padding: 1% 5%; 
+    height: 20px;
+    width: 90px;
+	text-align: center;
+	font-size: 15px;
+}
+.tabla_00{/*participantes.php  */
+    padding: 1% 0% 1% 3%; 
+    height: 20px;
+    width: 90px;
+	text-align: left;
+	font-size: 15px;
+}
+.tabla_1{/*ultima.php*/
+    height: 20px;
+    width: 50px;
+    text-align: center;
+	font-size: 15px;
+}
+.tabla_2{/*participantes.php   participaciones.php*/
+    width: 5%;
+    font-size: 12px; 
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+.tabla_3{/*ultima.php*/ 
+	width: 100%; 
+	margin-top: 1% !important;
+	margin: auto;
+}
+.tabla_4{/*ultima.php*/ 
+	width: 98%; 
+	margin: auto;
+	margin-top: 10% !important;
+}
+.tabla_7{/*participaciones.php*/
+    height: 20px;
+    width: 25%;
+	text-align: center;
+	font-size: 14px;
+}
+.tabla_8{/*participaciones.php*/
+    height: 20px;
+    width: 45%;
+    text-align: center;
+	font-size: 14px;
+}
+.tabla_9{/*participaciones.php*/
+    height: 20px;
+    width: 40%;
+    text-align: center;
+	font-size: 14px;
+}
+.td_1{/*bonos.php*/
+	font-size: 11px !important;
+	padding: 0%;
+	margin-top: -10% !important;
+}
+.th_1{/*bonos.php*/
+	width:20px !important;
+	padding: 0% -5%;
+}
+}

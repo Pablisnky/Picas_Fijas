@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+/*------ fin de reset CSS-----*/
+@keyframes modal{
+	100%{
+		visibility: visible;
+		opacity: 1;
+	}
+}
+/*-----------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+#Cerrar + a{/*el + selecciona al elemento que esta inmediatamente despues de Cerrar*/
+	position: fixed;
+	color:black;
+	font-family: verdana;
+	z-index: 50;
+	font-size: 17px;
+	top: 5%;
+	left: 90%;
+
+	width: 90px;
+	height: 40px;
+	line-height: 40px;
+	background-color: yellow;
+	border-radius: 20%;
+	text-align: center;
+	padding-top: 0px;
+	cursor: pointer;
+	box-sizing: border-box;
+
+	animation: modal 1.5s;/*tiempo que tarda en formarse la animacion*/
+	animation-delay: 0s;/*tiempo que tarda en aparecer la animacion*/
+	animation-fill-mode: forwards;/*la animacion se queda fija*/
+	visibility: hidden;
+	opacity: 0;
+}
+#Cerrar{
+	display: none;
+}
+#Cerrar:checked + label, #Cerrar:checked ~ .modal{
+	display: none;
+}
+.modal{
+	width: 100%;
+	height: 200vh;
+	background-color: rgba(0,0,0,0.85);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	
+	animation: modal 1.5s;/*tiempo que tarda en formarse la animacion*/
+	animation-delay: 0s;/*tiempo que tarda en aparecer la animacion, despues que ha cargado la pagina del fondo*/
+	animation-fill-mode: forwards;/*la animacion se queda fija*/
+	visibility: hidden;
+	opacity: 0;
+}
+.contenedor_modal{/*#F4FCFB*/
+	background-color:rgba(244,252,251,0.9) ;
+	border-radius: 15px; 
+	border-color: rgba(4, 6, 82, 1);
+	border-width: 1px;
+	border-style: solid;
+	width: 35%; 
+	margin: 10% auto; 
+	padding: 5% 2%;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 800px){
+	#Cerrar + label{/*el + selecciona al elemento que esta inmediatamente despues de Cerrar*/
+	position: fixed;
+	color:black;
+	font-family: verdana;
+	z-index: 50;
+	font-size: 17px;
+	/* margin-left: 90%;
+	margin-top: 14% !important; */
+	top: 80%;
+	width: 90px;
+	height: 40px;
+	line-height: 40px;
+	background-color: yellow;
+	/*background-color: #C7CFE4;*/
+	border-radius: 20%;
+	text-align: center;
+	padding-top: 0px;
+	cursor: pointer;
+	box-sizing: border-box;
+
+	animation: modal 1.5s;/*tiempo que tarda en formarse la animacion*/
+	animation-delay: 0s;/*tiempo que tarda en aparecer la animacion*/
+	animation-fill-mode: forwards;/*la animacion se queda fija*/
+	visibility: hidden;
+	opacity: 0;
+}
+
+.contenedor_modal{/*#F4FCFB*/
+	margin: 8% auto; 
+}
+
+.modal{
+	height: 200vh;
+	z-index: 5;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 1500px){/*las reglas se aplicarán cuando la pantalla tenga una anchura mayor de la indicada.*/
+	#Cerrar + label{/*el + selecciona al elemento que esta inmediatamente despues de Cerrar*/
+	margin-left: 47% !important;
+	margin-top: 4% !important;
+}
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+@media(min-width: 310px) and (max-width: 550px){/*aplicaría en cualquier medio con dimensiones entre 326 y 550 píxeles.*/
+
+.contenedor_modal{
+	width: 95%; 
+	margin: 60% auto; 
+}
+#Cerrar + label{/*el + selecciona al elemento que esta inmediatamente despues de Cerrar*/
+	/* margin-left: 37%;
+	margin-top: 30%; */
+	top: 90%;
+	left: 35%;
+}
+}
+
+/*------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------*/
+@media(min-width: 1600px){/*las reglas se aplicarán cuando la pantalla tenga una anchura mayor de la indicada.*/
+.contenedor_modal{
+	width: 70%; 
+	margin: 60% auto; 
+	padding: 4% 2%;
+}
+#Cerrar + label{/*el + selecciona al elemento que esta inmediatamente despues de Cerrar*/
+	margin-left: 37%;
+	margin-top: 30%;
+}
+}
