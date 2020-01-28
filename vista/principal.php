@@ -17,6 +17,9 @@
 				<script type="text/javascript" src="../javascript/Funciones_varias.js" ></script> 
 			</head>	
 			<body onload="autofocusInicioSesion()">
+				<div class="contendor_10">
+					<a class="a_1" href="../index.php">Home</a>
+				</div>
 				<div class="contenedor_11">
 					<div onclick= "ocultarMenu()">
 						<div class="contenedor_12">

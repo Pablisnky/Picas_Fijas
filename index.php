@@ -15,6 +15,7 @@
     </head>
     <body onload="llamar_evaluar();" >
         <div class="contendor_10">
+            <a class="a_1" href="vista/participantes.php">Participantes</a>
             <a class="a_1" href="vista/principal.php">Inicia sesión</a>
         </div>
         <div class="contenedor_7">
@@ -36,7 +37,7 @@
             </div>
             <div class="contenedor_6" id="Contendor_6">
                 <?php
-                    include("vista/instrucciones.php");
+                    include("vista/Instrucciones.php");
                 ?>
             </div>                
         </div>

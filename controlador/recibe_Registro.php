@@ -21,7 +21,7 @@
 		}
 		$Clave = $_POST["clave"];
 		$ConfirmarClave = $_POST["confirmarClave"];
-		$NumeroAleatorio = $_POST["numeroAleatorio"];
+		$ID_PU = $_POST["ID_PU"];
 
 		// echo "Nombre: " . $Nombre . "<br>" ;
 		// echo "Correo: " .  $Correo . "<br>";
@@ -29,7 +29,7 @@
 		// echo "Otro Pais: " .  $OtroPais . "<br>";
 		// echo "Clave: " .  $Clave . "<br>";
 		// echo "Confirmar clave: " .  $ConfirmarClave . "<br>"; 
-		// echo "NumeroAleatorio: " .  $NumeroAleatorio . "<br>";
+		// echo "ID_Prueba: " .  $ID_PU . "<br>";
         
 		$_SESSION["Usuario"]= $Nombre;//se crea una sesion que almacena el Nombre del usuario.
 
@@ -45,25 +45,34 @@
             $Aleatorio = mt_rand(1000000,999999999);
             //echo "Aleatorio= " . $Aleatorio . "<br>";
 			
+			//**********************************************************************************
+
 			//Se insertan los datos del participante en la tabla participante, la información privada de su cuenta entra en la tabla calve_usuario 
 			$insertar= "INSERT INTO usuario(nombre, correo, pais, Otro_Pais, fechaRegistro, aleatorio) VALUES('$Nombre','$Correo','$Pais','$OtroPais', NOW(), '$Aleatorio')";
 			mysqli_query($conexion, $insertar) or die ("Algo ha dio mal en la consulta a la BD");
 
-			//Se consulta en la tabla usuario el ID_Usuario del usuario que se esta afiliando
+			//Se consulta en la tabla usuario el ID_Usuario del usuario que se acaba de afiliar
 			$Consulta= "SELECT ID_Usuario FROM usuario WHERE aleatorio ='$Aleatorio'";
 			$Recordset= mysqli_query($conexion, $Consulta); 
 			$Resultado= mysqli_fetch_array($Recordset);
 			$ID_Usuario= $Resultado["ID_Usuario"];
-			//echo "El ID_Afiliado es= " . $ID_Participante . "<br>";
+			// echo "El ID_Afiliado es= " . $ID_Participante . "<br>";
 
-			//Se insertan los datos de la cuenta del participante en la base de datos. 
+			//Se insertan los datos de acceso a la cuenta del participante en la base de datos. 
 			$insertar_2= "INSERT INTO clave_usuario(ID_Usuario, clave) VALUES('$ID_Usuario', '$ClaveCifrada')";
 			mysqli_query($conexion, $insertar_2);
-			
+						
+			// //**********************************************************************************
+			//En caso que sea un registro desde un reto terminado sin haber hecho login
+			if(!empty($ID_PU)){
+				$Actualizar_2 = "UPDATE pruebas_usuario SET ID_Usuario = '$ID_Usuario' WHERE ID_PU = '$ID_PU'";
+				mysqli_query($conexion, $Actualizar_2);
+			}
+
 			//Se insertan los datos en la tabla de pruebas si el usuario desea registrar su reto. 
 			//Si se recibe numeroAleatorio se inserta en esta tabla
-			$insertar_3= "INSERT INTO pruebas_usuario(aleatorio, ID_Usuario) VALUES('$NumeroAleatorio','$ID_Usuario')";
-			mysqli_query($conexion, $insertar_3);
+			// $insertar_3= "INSERT INTO pruebas_usuario(aleatorio, ID_Usuario) VALUES('$NumeroAleatorio','$ID_Usuario')";
+			// mysqli_query($conexion, $insertar_3);
 		}
 		else{
 			echo "Fallo la confirmación de la contraseña";

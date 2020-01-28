@@ -1,7 +1,14 @@
 <?php
-	session_start();
+    session_start();
+    
+    //Se recibe el ID_Usuario si hubo inicio de sesion
+    if(!empty($ID_Usuario)){
 
-    // muestra la ip del dispositivo
+    }
+
+   // **********************************************************************************************
+    
+   // muestra la ip del dispositivo
     function getRealIP() {
         if(!empty($_SERVER['HTTP_CLIENT_IP']))
             return $_SERVER['HTTP_CLIENT_IP'];
@@ -24,9 +31,34 @@
     if(!empty($_GET["val_1"])){
         $Num_Us= $_GET["val_1"];
         // echo "Numero del usuario= " . $Num_Us . "<br>";
-        
+
+        //convierte el numero en un array
+        $caracteres_ale= str_split($Num_Us);
+        // print_r($caracteres_ale);
+
+        //se verifica que el numero no contenga numeros repetidos
+        $AleatorioUnico = array_unique($caracteres_ale);
+        // print_r($AleatorioUnico);
+
+        // //Se guarda en una sesion el numero aleatorio 
+        // $_SESSION["Numero_Alea"]= $Aleatorio;
+        // echo "aleatorio desde sesion= " . $_SESSION["Numero_Alea"] . "<br>";
+
+        //Se saca el numero de elementos que contiene el array
+        $longitud = count($AleatorioUnico);
+        // echo "La longitud del array es = " . $longitud . "<br>";
+
+        //No se admite el numero del usuario si tiene digitos repetidos
+        if($longitud != 4){ 
+            echo "<div class='contenedor_modal '>";
+            echo "<p class='parrafo_3'>Los cuatro digitos introducidos deben ser diferentes entre si</p>";
+            echo "</div>";
+            exit();  
+        }        
+       
         // echo "Se crea el array del numero del usuario";      
         $valores_usu = array();
+
         // se introduce el numero del usuario en el array $valores_usu
         array_push($valores_usu, $Num_Us);
         // echo "array del usuario: ";
@@ -35,9 +67,6 @@
         //convierte el numero del usuaio en un array
         $caracteres_usu= str_split($Num_Us);
         // print_r($caracteres_usu);
-    }
-    else{
-        // echo "Inserte un numero" . "<br>";    
     }
     
 // **********************************************************************************************  
@@ -55,9 +84,9 @@
     // echo "Cantidad de registro del reto= " .  $Retos_abiertos . "<br>";
     if($Retos_abiertos == 0){//reto cerrado se genera otro
         // echo "Entra en primera opcion" . "<br>";
-        
+
         //Se genera el numero aleatorio   
-        include("Borrar.php");          
+        include("Borrar.php");         
     }
 //********************************************************************************************
     // Se evalua si el reto esta en curso

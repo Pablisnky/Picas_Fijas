@@ -5,7 +5,7 @@ function instrucciones(){
 
 // *****************************************************************************************
 
-//Función llamada desde index.php
+//Función llamada desde intentos.php
 function limpiar(){
     var A= document.getElementById("Numero_us");
     var B= document.getElementById("Mostrar_evaluar");
@@ -18,14 +18,14 @@ function limpiar(){
 
 // *****************************************************************************************
 
-//Valida que el usuario haya insertado un numero de cuatro digitos
+//Valida que el usuario haya insertado un numero de cuatro digitos,Función llamada desde intentos.php
 function ValidaNumero(){
     campo = event.target;
     var emailRegex = /^([0-9])*$/;
 
     var Codigo = document.getElementById("Numero_us");
-    if(Codigo.value =="" || Codigo.value.indexOf(" ") == 0 || Codigo.value.length > 4){
-        alert ("Introduzca una Codigo de cuatro digitos");
+    if(Codigo.value =="" || Codigo.value.indexOf(" ") == 0 || Codigo.value.length > 4 || isNaN(Codigo.value)){
+        alert ("Introduzca una Codigo de cuatro digitos numericos");
         document.getElementById("Codigo").value = "";
         document.getElementById("Codigo").focus();
         return false;

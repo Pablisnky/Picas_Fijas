@@ -1,5 +1,5 @@
 <?php
-    require_once "constantesRemoto.php";
+    require_once "constantesLocal.php";
 
     //se instancia un objeto para la clase (nativa) mysqli y se le envian parametro al metodo constructor
     $conexion = new mysqli(HOSTING, USUARIO, PASSWORD, NOMBRE_BD);

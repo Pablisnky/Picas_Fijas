@@ -22,7 +22,7 @@
 	$Consulta_5="SELECT ID_NU FROM numero_usuario WHERE numero_ale='$NumberAle'";
 	$Recordset_5 = mysqli_query($conexion, $Consulta_5) or die (mysqli_error($conexion));
 	$Intento= mysqli_num_rows($Recordset_5);//se suman los registros que tiene la consulta realizada.
-	// echo "Intentos: " . $Intento;
+	//  echo "Intentos: " . $Intento;
 
     switch($Intento){
 		case "0":

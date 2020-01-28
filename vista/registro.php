@@ -3,9 +3,9 @@
 	$verifica = 1906;  
 	$_SESSION["verifica"] = $verifica; 
 
-	//Recibe numero aleatorio desde core.php en el caso de que el usuario decida registrarse luego de participar
-	$Numero_Aleatorio= $_GET["aleatorio"];
-	echo $Numero_Aleatorio;
+	//se recibe variable desde registro.php o core.php en el caso de que el usuario decida registrarse luego de participar
+	$ID_PU= $_GET["ID_PU"];
+	// echo $ID_PU . "<br>";
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -24,6 +24,9 @@
 		<link rel="shortcut icon" type="image/png" href="../images/logo.png">	
 	</head>	
 	<body onload= "autofocusRegistroGratis()">
+		<div class="contendor_10">
+			<a class="a_1" href="../index.php">Home</a>
+		</div>
 		<div class="contenedor_11">
 			<div onclick="ocultarMenu()""><!--ocultarMenu()-->
 				<div class="contenedor_12">
@@ -53,7 +56,7 @@
 								<div class="contenedor_11" id="Mostrar_verificaClave"></div><!-- recibe respuesta de ajax llamar_verificaClave()-->
 								<input type="password" name="confirmarClave" id="ConfirmarClave" placeholder="Repetir contraseña">
 							</div>             
-							<input type="text" name="numeroAleatorio" value="<?php echo $Numero_Aleatorio;?>" hidden>           
+							<input type="text" name="ID_PU" value="<?php echo $ID_PU;?>" hidden>           
                         	<input type="submit" name="Registrarse" value="Registrarse" style=" display: block; width: 120px;">
                     	</fieldset> 
 					</form>

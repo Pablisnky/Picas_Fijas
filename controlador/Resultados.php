@@ -1,4 +1,4 @@
-<div class="contenedor_1">
+<div class="">
     <!-- Se consultan los numeros ingresados y las picas y fijas -->
     <?php
         // echo "El IP del dispositivo= " . $IP . "<br>";

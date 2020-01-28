@@ -1,10 +1,9 @@
 <?php    
-    //incluido en core.php evaluaa las picas y fijas del numero del usuario
-    //Se inserta en la BD el numero aleatorio y del usuario
+    //incluido en "recibe_Index.php" evaluaa las picas y fijas e inserta en BD
 
     //Se trae el valor de aleatorio por medio de sesion creada en recibe_Index.php
     $Aleatorio= $_SESSION["Numero_Alea"];
-    // echo "Luego de crea session, aleatorio = " . $_SESSION["Numero_Alea"] . "<br>";
+    // echo "Aleatorio = " . $_SESSION["Numero_Alea"] . "<br>";
 
     //Se accede al servidor de base de datos
     include("../conexion/Conexion_BD.php");
@@ -87,10 +86,20 @@
                 //Se consulta que tipo de variable
                 // echo "Número aleatorio es de tipo= " . gettype($Aleatorio) . "<br>";
                 // echo "Número usuario es de tipo= " . gettype($Num_Us) . "<br>";
+                // echo "IP dispositivo= " . $IP . "<br>";
 
                 //Se inserta en BD los datos
                 $Insertar_1= "INSERT INTO numero_usuario(numero_usu, numero_ale, fijas, picas, IP_dispositivo) VALUES ('$Num_Us','$Aleatorio','$Fijas','$Picas','$IP')";
                 mysqli_query($conexion, $Insertar_1);
+
+                //Se inserta la fecha de la prueba en la BD
+                //1-Se consulta si el numero aleatorio ya fue asignado al dispositivo en uso la fecha mostrada
+                $Consulta_7= "SELECT ID_Usuario FROM pruebas_usuario WHERE aleatorio = '$Aleatorio' AND IP_dispositivo = '$IP' AND DATE_FORMAT(fecha_reto, '%y-%m-%d') = CURDATE()";
+                $Recordset_7 = mysqli_query($conexion, $Consulta_7);
+                if(mysqli_num_rows($Recordset_7) == 0){
+                    $Insertar_2= "INSERT INTO pruebas_usuario(IP_dispositivo, aleatorio, fecha_reto) VALUES ('$IP','$Aleatorio', NOW())";
+                    mysqli_query($conexion, $Insertar_2); 
+                }
             }
 
             include("Resultados.php");
@@ -104,13 +113,17 @@
         $Actualizar_1= "UPDATE numero_usuario SET reto_cerrado= 1 WHERE IP_dispositivo = '$IP' AND numero_ale= '$Aleatorio'";
         mysqli_query($conexion, $Actualizar_1);
         
-		echo "<article class='contenedor_modal modal_2'>";
+        //Se informa si el reto fue logrado o no
+        $Actualizar_1= "UPDATE pruebas_usuario SET reto_logrado= 1 WHERE IP_dispositivo = '$IP' AND numero_ale= '$Aleatorio'";
+        mysqli_query($conexion, $Actualizar_1);
+        
+        echo "<div class='contenedor_modal '>";
         echo "<p class='parrafo_2'>Felicitaciones</p>";
         echo "<p class='parrafo_3'>Acertaste el código secreto</p>";
         echo "<p class='parrafo_3'>Deseas registrar tus resultados</p>";
         echo "<a class='label_1' href='vista/registro.php?aleatorio=$Aleatorio'>Registrarse</a>";   
         echo "<a class='label_1' href='index.php'>Iniciar nuevo reto</a>";
-        echo "</article>"; 
+        echo "</div>";
 
         include("Resultados.php");
         

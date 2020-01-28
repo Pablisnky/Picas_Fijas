@@ -9,6 +9,12 @@
 a{
     text-decoration: none;
 }
+h1{
+    font-family:Caveat !important;
+    font-size: 3em !important;
+    display: block;
+    margin: 5% auto;
+}
 h2{/*instrucciones.php*/
     font-size: 1.5em;
     text-align: center;
@@ -42,7 +48,7 @@ select{/*principal.php     registro.php*/
     text-align: center;
 }
 .a_1{/*index.php*/
-    display: block;
+    display: inline-block;
     text-align: right;
     padding-right: 3%;
     color: #040652;
@@ -51,7 +57,6 @@ select{/*principal.php     registro.php*/
     font-weight: bold;
     width: 10%;
     background-color: orange;
-    margin-left: auto;
 }
 .Afiliacion_4{/*principal.php    registro.php*/
     padding: 5%;
@@ -60,6 +65,13 @@ select{/*principal.php     registro.php*/
 }
 .Afiliacion_4{/*principal.php    registro.php*/
     margin-top: 5%;
+}
+.contenedor_1{/*resultados.php*/
+    width: 100%;
+    margin: auto;
+}.contenedor_2{/*participantes.php*/
+    width: 40%;
+    margin: auto;
 }
 .contenedor_3{/*index.php*/
     width: 40%;
@@ -113,6 +125,13 @@ select{/*principal.php     registro.php*/
     width: 75%;
     margin: auto;
     margin-bottom: 5%;
+}
+.contenedor_14{/*entrada.php*/
+    width: 20%;
+
+}
+.contenedor_15{/*entrada.php*/
+
 }
 .contenedor_16{/*principal.php*/
     display: none;
@@ -169,6 +188,11 @@ tr{/*Resultados.php*/
 .label_2:hover{/*principal,php*/
     cursor: pointer;
 }
+.label_3{/*participantes.php*/
+    width: 21%;
+    height: 18px;
+    margin-top: 10%;
+}
 .li_1{/*instrucciones.php*/
     font-size: 1.1em;
     padding: 2%;
@@ -197,7 +221,8 @@ tr{/*Resultados.php*/
 	border-style: solid;
 	width: 100%; 
 	margin: 10% auto; 
-	padding: 5% 2%;
+    padding: 5% 2%;
+    
 }
 .option_1{/*registro.php*/
     color: rgba(0, 0, 0, 0.2);
@@ -205,18 +230,19 @@ tr{/*Resultados.php*/
 }
 .p_1{/*index.php*/
     background-color: yellow;
-    width: 8%;
-    font-size: 2em;
+    width: 13%;
+    height: 40px;
+    font-size: 4em;
     font-weight: bold;
     /* line-height: 10px; */
     padding: 0% 2%;
-    padding-top: 0.7%;
+    padding-top: ;
     letter-spacing: 1vw;
     text-align: center;
     margin: 3% auto;
 }
 .p_2{/*index.php*/
-	font-size:1.5em;
+	font-size:1.2em;
 	width: 90%;
     margin: 1% auto;
     text-align: center;
@@ -224,14 +250,14 @@ tr{/*Resultados.php*/
 .parrafo_1{/*principal.php*/
     text-align: center;
 }
-.parrafo_2{/*AvisoIn.php      AvisoOut.php*/
+/*.parrafo_2{AvisoIn.php      AvisoOut.php
     font-family: 'Raleway';
     font-weight: bold;
     font-size: 1.2em;
     text-align: center;
     margin-bottom: 3%;
-}
-.parrafo_3{/*AvisoIn.php      AvisoOut.php*/
+}*/
+.parrafo_3{/*recibe_Index.php*/
     font-family: Raleway;
     font-size: 1.2em;
     text-align: center;
@@ -250,4 +276,13 @@ tr{/*Resultados.php*/
     background-color: yellow;
     margin: 5% auto;
     width: 100% ;
+}
+.table_2{/*participantes.php*/
+    width: 100% ;
+}
+.tabla_3{/*participantes.php*/
+    text-align: center;
+}
+.tabla_4{/*participantes.php*/
+    padding-left: 3%;
 }
