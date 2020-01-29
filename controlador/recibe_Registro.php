@@ -29,7 +29,7 @@
 		// echo "Otro Pais: " .  $OtroPais . "<br>";
 		// echo "Clave: " .  $Clave . "<br>";
 		// echo "Confirmar clave: " .  $ConfirmarClave . "<br>"; 
-		// echo "ID_Prueba: " .  $ID_PU . "<br>";
+		//  echo "ID_Prueba: " .  $ID_PU . "<br>";
         
 		$_SESSION["Usuario"]= $Nombre;//se crea una sesion que almacena el Nombre del usuario.
 

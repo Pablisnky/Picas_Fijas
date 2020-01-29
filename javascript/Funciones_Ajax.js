@@ -54,9 +54,10 @@ function respuesta_llamar_evaluar(){
     setTimeout(llamar_cambiarNum,10);
 }
 
-//-----------------------------------------------------------------------------------------------
-//-----------------------------------------------------------------------------------------------
-function llamar_cambiarNum(){//Es llamada desde index.php
+// **************************************************************************************************
+// llamada desde index.php
+
+function llamar_cambiarNum(){
     A= "SoloRequisito";//se inserta el numero que indicó el usuario desde index.php
     var url="controlador/intentos.php?val_1=" + A;
     http_request.open('GET',url,true);     
@@ -74,3 +75,26 @@ function respuesta_llamar_cambiarNum(){
         }
     }
 }
+
+// **************************************************************************************************
+//llamada desde registro.php
+
+function llamar_verificaCorreo(){
+    A=document.getElementById("Correo").value;//se inserta el ID_Especialidad desde Citas.php
+    var url="../controlador/VerificarCorreo.php?val_1=" + A;
+    http_request.open('GET',url,true);     
+    peticion.onreadystatechange = respuesta_verificaCorreo;
+    peticion.setRequestHeader("content-type","application/x-www-form-urlencoded");
+    peticion.send("null");
+}                                                           
+function respuesta_verificaCorreo(){
+    if (peticion.readyState == 4){
+        if (peticion.status == 200){
+           document.getElementById('Mostrar_verificaCorreo').innerHTML=peticion.responseText;//se recoje el numero de pacientes
+        } 
+        else{
+            alert('Hubo problemas con la petición');
+        }
+    }
+}
+

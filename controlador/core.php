@@ -88,7 +88,7 @@
                 // echo "Número usuario es de tipo= " . gettype($Num_Us) . "<br>";
                 // echo "IP dispositivo= " . $IP . "<br>";
 
-                //Se inserta en BD los datos
+                //Se inserta en BD el numero del usuario y las picas y fijas que obtuvo
                 $Insertar_1= "INSERT INTO numero_usuario(numero_usu, numero_ale, fijas, picas, IP_dispositivo) VALUES ('$Num_Us','$Aleatorio','$Fijas','$Picas','$IP')";
                 mysqli_query($conexion, $Insertar_1);
 

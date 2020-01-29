@@ -13,7 +13,7 @@
 
         //Se consulta el IP del dispositivo, el codigo aleatorio y la fecha con la que el usuario participó, con estos datos se identifica el reto del usuario para guardarlo en su cuenta si asi lo desea
 
-        $Consulta_8= "SELECT * FROM pruebas_usuario WHERE aleatorio = '$NumberAle' AND IP_dispositivo = '$IP' AND DATE_FORMAT(fecha_reto, '%y-%m-%d') = DATE_FORMAT(NOW(), '%y-%m-%d')";
+        $Consulta_8= "SELECT * FROM pruebas_usuario WHERE aleatorio = '$NumberAle' AND IP_dispositivo = '$IP' AND DATE_FORMAT(fecha_reto, '%y-%m-%d') = CURDATE()";
         $Recordset_8 = mysqli_query($conexion, $Consulta_8);
         $Particiante= mysqli_fetch_array($Recordset_8);
         $ID_PU = $Particiante["ID_PU"];
@@ -34,5 +34,6 @@
        
         //Se cierran todas las sesiones creadas antes de crear las nuevas
         // include("cerrarSesion.php");
+
         
     ?>

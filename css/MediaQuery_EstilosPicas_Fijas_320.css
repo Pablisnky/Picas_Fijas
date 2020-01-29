@@ -1,0 +1,33 @@
+@media screen and (min-width: 320px) and (max-width: 499px){/*aplicaría en cualquier medio con dimensiones entre 320 y 499 píxeles.*/
+
+.a_1{/*index.php*/
+    width: 40%;
+}
+.contenedor_6{/*index.php*/
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.contenedor_7{/*index.php*/
+    display:grid; 
+    grid-template-columns: 100%;
+}
+.contendor_10{/*index.php*/
+    width: 100%;
+}
+.contenedor_11{/*principal.php*/
+    width: 100%;
+    margin: auto;
+}
+.contenedor_12{/*principal.php   registro.php*/
+    border-radius: 15px;
+    margin: 20% auto;
+    width: 90%;
+}
+.input_1{/*index.php*/
+    width: 80%;
+}
+.label_1{/*intentos.php*/
+    width: 60%;
+}
+
+}

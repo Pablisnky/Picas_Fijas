@@ -57,7 +57,7 @@
 		break;
 		case "10":
         $Oportunidad= "11";
-        include("RetoEnd.php");
+		include("RetoEnd.php");
 		break;
 	}
 

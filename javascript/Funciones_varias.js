@@ -43,9 +43,6 @@ function ValidaNumero(){
     // }
 }
 
-
-
-
 //************************************************************************************************
 
 //Impide que se sigan introduciendo caracteres al alcanzar el limite maximo, llamada desde index.php 
@@ -65,3 +62,52 @@ function valida_Longitud_1(){
 } 
 
 //************************************************************************************************
+//Impide que se inserte un correo invalido invocada desde registro.php
+function validarFormatoCorreo(){ 
+    campo = event.target;
+    var emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+      
+    if(document.getElementById("Correo").style.backgroundColor == "red"){
+      document.getElementById("Correo").value = "";        
+      document.getElementById("Correo").style.backgroundColor = "white";
+      document.getElementById("Correo").focus();
+    }
+    else{
+      if(emailRegex.test(campo.value)){      
+         return true;
+      } 
+      else{
+          alert("Correo no aceptado");      
+          document.getElementById("Correo").style.backgroundColor="red"; 
+          document.getElementById("Correo").value = "";
+      }
+    }  
+}
+
+//---------------------------------------------------------------------------------------------
+//Coloca el campo correo en colr white invocada desde registro.php
+function ColorearCorreo(){
+    document.getElementById("Correo").style.backgroundColor="white";
+}
+
+// *************************************************************************************************
+// Abre ventana modal de registro de usuario en registro.php
+
+function MostrarRegistro(){
+    var A = document.getElementById("Contenedor_17").style.display = "block"; 
+    // alert("hola");
+}
+
+// *************************************************************************************************
+//Coloca el foco en principal.php
+
+function autofocusInicioSesion(){
+    document.getElementById('Correo').focus();
+}
+
+// *************************************************************************************************
+//Coloca el foco en index.php
+
+function autofocusNumero(){
+    document.getElementById('Numero_us').focus();
+}

@@ -27,7 +27,7 @@ input[type=email], input[type=password], input[type=text]{/*principal.php     re
     text-align: center;
 }
 input[type=submit]{/*principal.php     registro.php*/
-    background-color: #040652;
+    /* background-color: rgb(183, 149, 11); */
     color: white;
     border-radius: 15px;
     padding: 1%;
@@ -36,6 +36,7 @@ input[type=submit]{/*principal.php     registro.php*/
     margin: auto;
     margin-bottom: 4%;
     text-align: center;
+    border-color: black;
 }
 input[type=submit]:hover{/*principal.php*/
     cursor: pointer;
@@ -50,42 +51,67 @@ select{/*principal.php     registro.php*/
 .a_1{/*index.php*/
     display: inline-block;
     text-align: right;
-    padding-right: 3%;
+    padding-right: 1%;
     color: #040652;
     text-decoration: none;
     line-height: 50px;
     font-weight: bold;
-    width: 10%;
-    background-color: orange;
+    width: 13%;
+    background-color: rgb(244, 208, 63);
 }
 .Afiliacion_4{/*principal.php    registro.php*/
     padding: 5%;
     width: 90%;
     border-radius: 15px;
-}
-.Afiliacion_4{/*principal.php    registro.php*/
     margin-top: 5%;
+}
+.Afiliacion_3{/*   registro.php*/
+    border-radius: 15px;
+    margin-top: 3%;
+    padding: 5%;
+}
+.anuncio{/*registro.php*/
+    background-color: yellow;
+    text-align: center;
+}
+.caption_1{/*entrada.php*/
+    height: 50px;
+    background-color:rgb(244, 208, 63);
+    line-height: 50px;
+    font-size: 1.5em;
 }
 .contenedor_1{/*resultados.php*/
     width: 100%;
     margin: auto;
 }.contenedor_2{/*participantes.php*/
-    width: 40%;
+    background-color:  rgba(244, 208, 63, 0.2);
+    width: 70%;
     margin: auto;
+    border-radius: 20px;
+    padding: 2%;
 }
 .contenedor_3{/*index.php*/
+    background-color: rgb( 154, 125, 10);
     width: 40%;
-    margin: 5% auto;
+    padding: 3%;
+    border-radius: 20px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    margin: 10% auto;
 }
 .contenedor_4{/*index.php*/
+    /* background-color: yellow; */
     width: 100%;
 }
 .contenedor_5{/*index.php*/
+    /* background-color: red; */
     display:none ;
     width: 100% ;
+    /* margin-right: 25% !important; */
 }
 .contenedor_6{/*index.php*/
-    background-color: rgba(33, 240, 86, 0.6);
+    background-color:  rgb(249, 231, 159) ;
     border-radius: 15px;
     margin-top: 10%;
     padding: 5%;
@@ -93,7 +119,8 @@ select{/*principal.php     registro.php*/
 }
 .contenedor_7{/*index.php*/
     display:grid; 
-    grid-template-columns: 70% 25%;
+    grid-template-columns: 65% 35%;
+    margin-right: 5%;
 }
 .contenedor_8{/*index.php*/
     width: 100%;
@@ -110,14 +137,14 @@ select{/*principal.php     registro.php*/
     z-index: 5;
 }
 .contendor_10{/*index.php*/
-    background-color: rgba(30, 250, 23, 0.4);
+    background-color: rgb( 252, 243, 207);
     height: 50px;
 }
 .contenedor_11{/*principal.php*/
     width: 30%;
     margin: auto;
 }
-.contenedor_12{/*principal.php*/
+.contenedor_12{/*principal.php   registro.php*/
     border-radius: 15px;
     margin: 20% 0%;
 }
@@ -127,14 +154,57 @@ select{/*principal.php     registro.php*/
     margin-bottom: 5%;
 }
 .contenedor_14{/*entrada.php*/
-    width: 20%;
-
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    width: 90%;
+    margin: 5% auto;
 }
 .contenedor_15{/*entrada.php*/
-
+    width: 80%;
+    margin: auto;
+    margin-top: 0%;
 }
 .contenedor_16{/*principal.php*/
     display: none;
+}
+.contenedor_17{/*registro.php*/
+    display: none;
+	width: 100%;
+	height: 120vh; 
+	background-color: rgba(0,0,0,0.85); 
+	 position: absolute; 
+	top: 0;
+	left: 0;
+	z-index: 15;
+	
+	/* animation: modal 1.5s;/*tiempo que tarda en formarse la animacion
+	animation-delay: 0s;tiempo que tarda en aparecer la animacion, despues que ha cargado la pagina del fondo
+	animation-fill-mode: forwards;la animacion se queda fija
+	visibility: hidden;
+	opacity: 0;  */
+}
+.contenedor_18{/*reistro.php*/
+    width:30%;
+    margin:8% auto;
+    background-color: white;
+    padding: 2%;
+	border-radius: 15px; 
+}
+.contenedor_modal{/*#F4FCFB*/
+	background-color:rgba(244,252,251,0.9) ;
+	border-radius: 15px; 
+	border-color: rgba(4, 6, 82, 1);
+	border-width: 1px;
+	border-style: solid;
+	width: 100%; 
+	margin: 10% auto; 
+    padding: 5% 2%;
+}
+.etiqueta_3{/*FotoPerfil.php*/
+    display: block;
+    width: 96%;
+    text-align: center;
+    font-size: 0.9em;
 }
 .etiqueta_34{/*registro.php*/
     display: block;
@@ -147,30 +217,55 @@ h1{
     text-align: center;
     margin-top: 3%;
 }
-.td_1{/*Resultados.php*/
-    text-align: center;
+.h2_1{/*registro.php*/
+    width: 100%;
 }
-tr{/*Resultados.php*/
-    height: 25px;
+.hr_1{/*registro.php*/
+    margin: 10%;
+}
+.img_1{/*participantes.php*/
+    width: 40%;
+}
+.imagen_8{/*entrada.php*/
+    margin-left: 5%;
+    width: 90%;
+    display: block;
+    margin-bottom: 5%;
 }
 .input_1{/*index.php*/
-    background-color: rgba(0, 0, 255, 0.1);
+    background-color: rgb( 247, 220, 111);
     margin: 5% auto;
     display: block;
     font-size: 1.2em;
     text-align: center;
     padding: 1%;
 }
-.label_1{/*index.php    AvisoIn.php*/
+.input_2{/*entrada.php*/
+    background-color:rgb( 252, 243, 207);
+    position: absolute;
+    display: block;
+    top: 0%;
+    left: 85%;
+    width: 15% !important;
+    border: none;
+    font-weight: bold;
+}
+.input_3{/*entrada.php*/
+    width: 60% !important;
+}
+.label_1{/*intentos.php*/
     margin:5% auto;
     display: block;
     text-align: center;
     width: 40%;
-    background-color: #040652;
+    background-color:  rgb(183, 149, 11);
     border-radius: 15px;
     padding: 1.5%;
     color: white;
     font-weight: bold;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
 }
 .label_1:hover{
     cursor: pointer;
@@ -193,6 +288,14 @@ tr{/*Resultados.php*/
     height: 18px;
     margin-top: 10%;
 }
+.label_4{/*entrada.php*/
+    width: 70% !important;
+    background-color:  rgb(183, 149, 11);
+}
+.label_5{/*entrada.php*/
+    width: 70% !important;
+    height: 30px;
+}
 .li_1{/*instrucciones.php*/
     font-size: 1.1em;
     padding: 2%;
@@ -212,17 +315,6 @@ tr{/*Resultados.php*/
 	animation-fill-mode: forwards;/*la animacion se queda fija*/
 	visibility: hidden;
 	opacity: 0;
-}
-.contenedor_modal{/*#F4FCFB*/
-	background-color:rgba(244,252,251,0.9) ;
-	border-radius: 15px; 
-	border-color: rgba(4, 6, 82, 1);
-	border-width: 1px;
-	border-style: solid;
-	width: 100%; 
-	margin: 10% auto; 
-    padding: 5% 2%;
-    
 }
 .option_1{/*registro.php*/
     color: rgba(0, 0, 0, 0.2);
@@ -250,13 +342,13 @@ tr{/*Resultados.php*/
 .parrafo_1{/*principal.php*/
     text-align: center;
 }
-/*.parrafo_2{AvisoIn.php      AvisoOut.php
+.parrafo_2{/*RetoEnd.php*/
     font-family: 'Raleway';
     font-weight: bold;
     font-size: 1.2em;
     text-align: center;
-    margin-bottom: 3%;
-}*/
+    /* margin-bottom: 3%; */
+}
 .parrafo_3{/*recibe_Index.php*/
     font-family: Raleway;
     font-size: 1.2em;
@@ -273,16 +365,33 @@ tr{/*Resultados.php*/
     font-weight: bold;
 }
 .table_1{/*Resultados.php*/
-    background-color: yellow;
+    background-color: rgba(247, 220, 111, 0.8);
     margin: 5% auto;
     width: 100% ;
+    border-collapse: collapse;
 }
 .table_2{/*participantes.php*/
-    width: 100% ;
+    width: 100%;
+    border-collapse: collapse;
 }
 .tabla_3{/*participantes.php*/
     text-align: center;
 }
-.tabla_4{/*participantes.php*/
-    padding-left: 3%;
+.tabla_5{/*participantes.php*/
+    text-align: center;
+    width: 20%;
+}
+.td_1{/*Resultados.php*/
+    text-align: center;
+    height: 40px;
+}
+.th_1{/*participantes.php*/
+    width: 30%;
+} 
+tr{/*Resultados.php*/
+    height: 25px;
+}
+tr:hover{
+    background-color: rgb( 183, 149, 11);
+    color: white;
 }

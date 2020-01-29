@@ -1,0 +1,12 @@
+@media screen and (min-width: 1500px){/*las reglas se aplicarán cuando la pantalla tenga una anchura mayor de la indicada.*/
+
+
+.a_1{/*index.php*/
+    width: 10%;
+}
+.input_2{/*entrada.php*/
+    background-color: red;
+    height: 10px;
+    }
+
+}
